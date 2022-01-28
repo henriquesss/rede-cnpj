@@ -8,6 +8,7 @@ https://github.com/rictom/rede-cnpj
 from flask import Flask, request, render_template, send_from_directory, send_file, jsonify, Response, redirect
 #https://medium.com/analytics-vidhya/how-to-rate-limit-routes-in-flask-61c6c791961b
 import flask_limiter #import Limiter
+from flask_limiter.util import get_remote_address
 
 from werkzeug.utils import secure_filename
 import os, sys, json, secrets, copy, io
